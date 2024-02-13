@@ -520,6 +520,8 @@ class DaikinClimate(ClimateEntity):
                             swingModes.append(SWING_VERTICAL)
                             if horizontal is not None:
                                 swingModes.append(SWING_BOTH)
+                        if mode == "floorHeatingAirflow":
+                            swingModes.append(mode)
                         if mode == "windNice":
                             swingModes.append("Comfort Airflow")
                             if horizontal is not None:
